@@ -113,7 +113,7 @@
     .hm { background:rgba(255,255,255,.04); border-radius:8px; padding:.75rem; }
     .hm-val { font-family:var(--ff-head); font-size:1.2rem; color:var(--gold); font-weight:700; }
     .hm-lbl { font-size:.65rem; color:rgba(255,255,255,.38); margin-top:.15rem; }
-    .hero-badge { position:absolute; top:-1rem; right:-1rem; background:var(--gold); color:var(--white); border-radius:9px; padding:.55rem .9rem; font-size:.68rem; font-weight:700; letter-spacing:.04em; box-shadow:0 4px 16px rgba(166,138,56,.4); }
+    .hero-badge { position:absolute; top:-1rem; right:-1rem; background:var(--gold); color:var(--white); border-radius:9px; padding:.55rem .9rem; font-size:.68rem; font-weight:700; letter-spacing:.04em; box-shadow:0 4px 16px rgba(166,138,56,.4); z-index:10; } /* ensure visibility */
     @media(max-width:900px){ .hero-grid{grid-template-columns:1fr} .hero-vis{display:none} }
 
     /* ── STRIP ── */
@@ -367,8 +367,258 @@
   </div>
 </div>
 
-<!-- ABOUT, SERVICES, PLATFORM, LAB, PARTNERS, VISION, CONTACT sections (unchanged) ... -->
-<!-- ... (I'm omitting the rest for brevity, but they remain exactly as you had them) ... -->
+<!-- ═══════════════ ABOUT ═══════════════ -->
+<section id="about" class="section s-cream">
+  <div class="container">
+    <div class="about-grid">
+      <div class="fi-anim" style="position:relative;padding-bottom:1.5rem">
+        <div class="about-vis">
+          <div class="av-bg">GADA</div>
+          <div class="av-icon">🌾</div>
+          <div class="av-name">GME National</div>
+          <div class="av-sub" data-en="Relizane · Algeria" data-fr="Relizane · Algérie" data-ar="غليزان · الجزائر">Relizane · Algeria</div>
+        </div>
+        <div class="about-bdg">
+          <div class="about-bdg-n">8</div>
+          <div class="about-bdg-t" data-en="Core Services" data-fr="Services" data-ar="خدمات">Core Services</div>
+        </div>
+      </div>
+      <div class="fi-anim">
+        <div class="slabel" data-en="Who We Are" data-fr="Qui Sommes-Nous" data-ar="من نحن">Who We Are</div>
+        <h2 class="stitle" data-en="Algeria's Agricultural Development Engine" data-fr="Le Moteur de Développement Agricole d'Algérie" data-ar="محرك التطوير الزراعي في الجزائر">Algeria's Agricultural Development Engine</h2>
+        <div class="divider"></div>
+        <p class="ssub" data-en="GADA (Groupement Algérien de Développement Agricole) is a national GME headquartered in Relizane, operating across all 58 wilayas. We combine engineering expertise, digital analytics, laboratory science, and satellite technology to modernize Algeria's agricultural sector in full alignment with the Ministry of Agriculture's national strategy." data-fr="GADA est un GME national basé à Relizane, opérant dans les 58 wilayas. Nous combinons expertise en ingénierie, analyses numériques, sciences de laboratoire et technologie satellite pour moderniser le secteur agricole algérien, en accord total avec la stratégie nationale du Ministère de l'Agriculture." data-ar="جادا (التجمع الجزائري للتطوير الزراعي) تكتل وطني مقره غليزان، يعمل في جميع الولايات الـ 58. نجمع خبرة هندسية وتحليلات رقمية وعلوم مختبر وتقنية أقمار صناعية لتحديث القطاع الزراعي الجزائري.">GADA (Groupement Algérien de Développement Agricole) is a national GME headquartered in Relizane, operating across all 58 wilayas. We combine engineering expertise, digital analytics, laboratory science, and satellite technology to modernize Algeria's agricultural sector in full alignment with the Ministry of Agriculture's national strategy.</p>
+        <div class="pillars">
+          <div class="pillar"><div class="pt" data-en="Our Mission"       data-fr="Notre Mission"       data-ar="مهمتنا">Our Mission</div><div class="pb" data-en="Transform Algeria's agricultural sector through technology, engineering, and intelligent data systems." data-fr="Transformer le secteur agricole algérien par la technologie, l'ingénierie et les systèmes de données intelligents." data-ar="تحويل القطاع الزراعي الجزائري من خلال التكنولوجيا والهندسة وأنظمة البيانات الذكية.">Transform Algeria's agricultural sector through technology, engineering, and intelligent data systems.</div></div>
+          <div class="pillar"><div class="pt" data-en="Our Vision"        data-fr="Notre Vision"        data-ar="رؤيتنا">Our Vision</div><div class="pb" data-en="Position Algeria as a regional leader in smart, sustainable agriculture by 2030." data-fr="Positionner l'Algérie comme leader régional en agriculture intelligente d'ici 2030." data-ar="تحديد الجزائر كرائدة إقليمية في الزراعة الذكية والمستدامة بحلول 2030.">Position Algeria as a regional leader in smart, sustainable agriculture by 2030.</div></div>
+          <div class="pillar"><div class="pt" data-en="National Alignment" data-fr="Alignement National" data-ar="التوافق الوطني">National Alignment</div><div class="pb" data-en="All operations aligned with Ministry of Agriculture strategic priorities and national digitization plans." data-fr="Toutes les opérations alignées sur les priorités stratégiques du Ministère de l'Agriculture." data-ar="جميع العمليات متوافقة مع أولويات وزارة الزراعة وخطط الرقمنة الوطنية.">All operations aligned with Ministry of Agriculture strategic priorities and national digitization plans.</div></div>
+          <div class="pillar"><div class="pt" data-en="Food Security"     data-fr="Sécurité Alimentaire" data-ar="الأمن الغذائي">Food Security</div><div class="pb" data-en="Contributing directly to Algeria's food independence through optimized production and early warning systems." data-fr="Contribuer à l'indépendance alimentaire de l'Algérie via la production optimisée et les systèmes d'alerte précoce." data-ar="المساهمة في الاستقلال الغذائي للجزائر من خلال الإنتاج الأمثل وأنظمة الإنذار المبكر.">Contributing directly to Algeria's food independence through optimized production and early warning systems.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ SERVICES ═══════════════ -->
+<section id="services" class="section s-white">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3rem" class="fi-anim">
+      <div class="slabel" data-en="What We Do" data-fr="Ce Que Nous Faisons" data-ar="ما نقوم به">What We Do</div>
+      <h2 class="stitle" data-en="Our Core Services" data-fr="Nos Services Principaux" data-ar="خدماتنا الأساسية">Our Core Services</h2>
+      <div class="divider" style="margin:1rem auto 0"></div>
+    </div>
+    <div class="g4 fi-anim">
+      <div class="svc"><div class="svc-ico">📐</div><div class="svc-t" data-en="Technico-Economic Studies"   data-fr="Études Technico-Économiques"   data-ar="دراسات تقنية اقتصادية">Technico-Economic Studies</div><div class="svc-d" data-en="Feasibility analysis, investment structuring, and strategic planning for large-scale agricultural projects." data-fr="Analyse de faisabilité, structuration des investissements et planification stratégique pour les grands projets agricoles." data-ar="تحليل الجدوى وهيكلة الاستثمار والتخطيط الاستراتيجي للمشاريع الزراعية الكبرى.">Feasibility analysis, investment structuring, and strategic planning for large-scale agricultural projects.</div><div class="svc-tag"><span class="tag tag-outline">Consulting</span></div></div>
+      <div class="svc"><div class="svc-ico">🏗️</div><div class="svc-t" data-en="Agricultural Infrastructure"   data-fr="Construction Agricole"         data-ar="البنية التحتية الزراعية">Agricultural Infrastructure</div><div class="svc-d" data-en="Design and construction of silos, greenhouses, storage facilities, irrigation systems, and modern farm structures." data-fr="Conception et construction de silos, serres, entrepôts, systèmes d'irrigation et structures agricoles modernes." data-ar="تصميم وبناء الصوامع والبيوت المحمية ومرافق التخزين وأنظمة الري والهياكل الزراعية الحديثة.">Design and construction of silos, greenhouses, storage facilities, irrigation systems, and modern farm structures.</div><div class="svc-tag"><span class="tag tag-outline">Engineering</span></div></div>
+      <div class="svc"><div class="svc-ico">🔬</div><div class="svc-t" data-en="Analysis Laboratories"         data-fr="Laboratoires d'Analyse"        data-ar="مختبرات التحليل">Analysis Laboratories</div><div class="svc-d" data-en="Soil analysis, water quality testing, veterinary diagnostics, and crop health assessments across our national lab network." data-fr="Analyse des sols, tests de qualité de l'eau, diagnostics vétérinaires et évaluations de santé des cultures." data-ar="تحليل التربة واختبار جودة المياه والتشخيص البيطري وتقييمات صحة المحاصيل.">Soil analysis, water quality testing, veterinary diagnostics, and crop health assessments across our national lab network.</div><div class="svc-tag"><span class="tag tag-outline">Science</span></div></div>
+      <div class="svc"><div class="svc-ico">📡</div><div class="svc-t" data-en="Satellite Livestock Tracking"  data-fr="Suivi Satellite Bétail"        data-ar="تتبع الماشية بالأقمار الصناعية">Satellite Livestock Tracking</div><div class="svc-d" data-en="GPS ear tags with real-time location, temperature, and health data. No local network required. Continuous 24/7 herd monitoring." data-fr="Boucles GPS avec localisation, température et données de santé en temps réel. Sans réseau local. Surveillance continue 24h/24." data-ar="بطاقات أذن GPS مع بيانات الموقع ودرجة الحرارة والصحة في الوقت الفعلي. لا يتطلب شبكة محلية. مراقبة مستمرة.">GPS ear tags with real-time location, temperature, and health data. No local network required. Continuous 24/7 herd monitoring.</div><div class="svc-tag"><span class="tag tag-outline">Technology</span></div></div>
+      <div class="svc"><div class="svc-ico">🎓</div><div class="svc-t" data-en="Training Institute"            data-fr="Institut de Formation"         data-ar="معهد التدريب">Training Institute</div><div class="svc-d" data-en="Agricultural training centers across all 58 wilayas providing farmers with up-to-date knowledge and instant diagnostic support in Algerian Arabic." data-fr="Centres de formation agricole dans les 58 wilayas offrant des connaissances actualisées et un soutien diagnostique instantané en arabe algérien." data-ar="مراكز تدريب زراعي في الولايات الـ 58 توفر للمزارعين معرفة محدّثة ودعمًا تشخيصيًا فوريًا بالعربية الجزائرية.">Agricultural training centers across all 58 wilayas providing farmers with up-to-date knowledge and instant diagnostic support in Algerian Arabic.</div><div class="svc-tag"><span class="tag tag-outline">Education</span></div></div>
+      <div class="svc"><div class="svc-ico">🚜</div><div class="svc-t" data-en="Equipment Import & Brokerage"  data-fr="Import & Courtage Équipements" data-ar="استيراد ووساطة المعدات">Equipment Import & Brokerage</div><div class="svc-d" data-en="Sourcing and importing certified agricultural machinery, precision sensors, and modern farming equipment from vetted international partners." data-fr="Approvisionnement et importation de machines agricoles certifiées, capteurs de précision et équipements modernes de partenaires internationaux vérifiés." data-ar="مصادر واستيراد الآلات الزراعية المعتمدة وأجهزة الاستشعار الدقيقة ومعدات الزراعة الحديثة.">Sourcing and importing certified agricultural machinery, precision sensors, and modern farming equipment from vetted international partners.</div><div class="svc-tag"><span class="tag tag-outline">Trade</span></div></div>
+      <div class="svc"><div class="svc-ico">💊</div><div class="svc-t" data-en="Veterinary Pharmaceuticals"    data-fr="Médicaments Vétérinaires"      data-ar="الأدوية البيطرية">Veterinary Pharmaceuticals</div><div class="svc-d" data-en="Research and production of veterinary medicines formulated specifically for North African livestock breeds and climate conditions." data-fr="Recherche et production de médicaments vétérinaires formulés spécifiquement pour les races et conditions climatiques nord-africaines." data-ar="بحث وإنتاج أدوية بيطرية مُصاغة خصيصًا لسلالات الماشية وظروف المناخ في شمال إفريقيا.">Research and production of veterinary medicines formulated specifically for North African livestock breeds and climate conditions.</div><div class="svc-tag"><span class="tag tag-gold">Phase 4</span></div></div>
+      <div class="svc"><div class="svc-ico">💹</div><div class="svc-t" data-en="Investment Structuring"        data-fr="Structuration d'Investissement" data-ar="هيكلة الاستثمار">Investment Structuring</div><div class="svc-d" data-en="Financial modeling, investment packaging, and partnership structuring for domestic and international agricultural investors." data-fr="Modélisation financière, packaging d'investissement et structuration de partenariats pour investisseurs agricoles." data-ar="النمذجة المالية وتعبئة الاستثمار وهيكلة الشراكات للمستثمرين الزراعيين المحليين والدوليين.">Financial modeling, investment packaging, and partnership structuring for domestic and international agricultural investors.</div><div class="svc-tag"><span class="tag tag-outline">Finance</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ PLATFORM ═══════════════ -->
+<section id="platform" class="section s-cream">
+  <div class="container">
+    <div class="fi-anim" style="margin-bottom:2.2rem">
+      <div class="slabel" data-en="Digital Infrastructure" data-fr="Infrastructure Digitale" data-ar="البنية التحتية الرقمية">Digital Infrastructure</div>
+      <h2 class="stitle" data-en="Algeria's Agricultural Intelligence Platform" data-fr="La Plateforme d'Intelligence Agricole d'Algérie" data-ar="منصة الاستخبارات الزراعية في الجزائر">Algeria's Agricultural<br/>Intelligence Platform</h2>
+      <div class="divider"></div>
+      <p class="ssub" data-en="Every farm, animal, transaction, and branch feeds into a single real-time dashboard — giving decision-makers at every level a complete, accurate picture of national agricultural activity." data-fr="Chaque ferme, animal, transaction et branche alimente un tableau de bord unique en temps réel — offrant aux décideurs à chaque niveau une image complète et précise de l'activité agricole nationale." data-ar="كل مزرعة وحيوان ومعاملة وفرع يغذي لوحة تحكم واحدة في الوقت الفعلي — مما يمنح صانعي القرار على كل مستوى صورة كاملة ودقيقة.">Every farm, animal, transaction, and branch feeds into a single real-time dashboard — giving decision-makers at every level a complete, accurate picture of national agricultural activity.</p>
+    </div>
+    <div class="plat-wrap fi-anim">
+      <div class="plat-head">
+        <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
+          <span class="tag tag-gold">GADA Digital Platform</span>
+          <span style="font-size:.8rem;color:rgba(255,255,255,.42)" data-en="3-Layer Architecture · Secure · Real-Time · Arabic / French / English" data-fr="Architecture 3 Couches · Sécurisée · Temps Réel · Arabe / Français / Anglais" data-ar="معمارية 3 طبقات · آمنة · في الوقت الفعلي · عربي / فرنسي / إنجليزي">3-Layer Architecture · Secure · Real-Time · Arabic / French / English</span>
+        </div>
+      </div>
+      <div class="plat-layers">
+        <div class="pl">
+          <div class="pl-n">01</div>
+          <div class="pl-t" data-en="Data Collection" data-fr="Collecte de Données" data-ar="جمع البيانات">Data Collection</div>
+          <ul class="pl-list">
+            <li data-en="CERES TAG satellite ear tags"      data-fr="Boucles satellite CERES TAG"       data-ar="بطاقات CERES TAG بالأقمار الصناعية">CERES TAG satellite ear tags</li>
+            <li data-en="Soil & water IoT sensors"          data-fr="Capteurs IoT sol & eau"            data-ar="أجهزة استشعار التربة والمياه">Soil & water IoT sensors</li>
+            <li data-en="Laboratory analysis results"       data-fr="Résultats analyses laboratoire"    data-ar="نتائج تحليلات المختبر">Laboratory analysis results</li>
+            <li data-en="Branch financial transactions"     data-fr="Transactions financières branches" data-ar="المعاملات المالية للفروع">Branch financial transactions</li>
+            <li data-en="agCommander herd management data"  data-fr="Données gestion troupeaux"         data-ar="بيانات إدارة القطيع">agCommander herd management data</li>
+          </ul>
+        </div>
+        <div class="pl">
+          <div class="pl-n">02</div>
+          <div class="pl-t" data-en="AI Analysis" data-fr="Analyse IA" data-ar="تحليل الذكاء الاصطناعي">AI Analysis</div>
+          <ul class="pl-list">
+            <li data-en="Health prediction 72h in advance"  data-fr="Prédiction santé 72h à l'avance"  data-ar="توقع الصحة قبل 72 ساعة">Health prediction 72h in advance</li>
+            <li data-en="Automatic anomaly detection"       data-fr="Détection anomalies automatique"   data-ar="الكشف التلقائي عن الشذوذات">Automatic anomaly detection</li>
+            <li data-en="Financial monitoring & alerts"     data-fr="Surveillance financière & alertes" data-ar="المراقبة المالية والتنبيهات">Financial monitoring & alerts</li>
+            <li data-en="National production forecasting"   data-fr="Prévision production nationale"    data-ar="توقعات الإنتاج الوطني">National production forecasting</li>
+            <li data-en="Automated reporting"               data-fr="Rapports automatisés"              data-ar="التقارير الآلية">Automated reporting</li>
+          </ul>
+        </div>
+        <div class="pl">
+          <div class="pl-n">03</div>
+          <div class="pl-t" data-en="Live Dashboard" data-fr="Tableau de Bord Live" data-ar="لوحة التحكم المباشرة">Live Dashboard</div>
+          <ul class="pl-list">
+            <li data-en="Ministry — national heatmap"       data-fr="Ministère — carte nationale"       data-ar="الوزارة — خريطة حرارية وطنية">Ministry — national heatmap</li>
+            <li data-en="CEO / CFO — full overview"         data-fr="PDG / CFO — vue complète"          data-ar="المدير العام — نظرة شاملة">CEO / CFO — full overview</li>
+            <li data-en="Branch managers — local view"      data-fr="Directeurs branches — vue locale"  data-ar="مدراء الفروع — عرض محلي">Branch managers — local view</li>
+            <li data-en="Mobile, tablet & desktop"          data-fr="Mobile, tablette & bureau"         data-ar="موبايل وتابلت وكمبيوتر">Mobile, tablet & desktop</li>
+            <li data-en="Arabic / French / English UI"      data-fr="Interface AR / FR / EN"            data-ar="واجهة عربية / فرنسية / إنجليزية">Arabic / French / English UI</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAPABILITIES -->
+    <div style="margin-top:4rem" class="fi-anim">
+      <div class="slabel" data-en="Key Capabilities" data-fr="Capacités Clés" data-ar="القدرات الرئيسية">Key Capabilities</div>
+      <h3 class="stitle" style="font-size:1.7rem" data-en="What the Platform Does" data-fr="Ce Que Fait la Plateforme" data-ar="ما تفعله المنصة">What the Platform Does</h3>
+      <div class="divider"></div>
+      <div class="g2" style="gap:0 4rem;align-items:start">
+        <div>
+          <div class="cap"><div class="cap-n">01</div><div><div class="cap-t" data-en="Real-Time Animal Health Monitoring"          data-fr="Surveillance Santé Animale Temps Réel"       data-ar="مراقبة صحة الحيوانات في الوقت الفعلي">Real-Time Animal Health Monitoring</div><div class="cap-d" data-en="Temperature, movement, and herd separation tracked live across all farms. Automatic alerts sent to farm managers via SMS and WhatsApp before any issue escalates." data-fr="Température, mouvement et séparation du troupeau suivis en direct. Alertes automatiques envoyées aux responsables via SMS et WhatsApp avant que la situation ne s'aggrave." data-ar="تتبع درجة الحرارة والحركة وانفصال القطيع مباشرة. إرسال تنبيهات تلقائية لمديري المزارع عبر SMS وواتساب.">Temperature, movement, and herd separation tracked live across all farms. Automatic alerts sent to farm managers via SMS and WhatsApp before any issue escalates.</div></div></div>
+          <div class="cap"><div class="cap-n">02</div><div><div class="cap-t" data-en="72-Hour Early Warning System"               data-fr="Système d'Alerte Précoce 72 Heures"          data-ar="نظام الإنذار المبكر قبل 72 ساعة">72-Hour Early Warning System</div><div class="cap-d" data-en="The system analyzes behavioral and health data to detect early signs of illness up to 72 hours before visible symptoms — enabling intervention before losses occur." data-fr="Le système analyse les données comportementales et de santé pour détecter les signes précoces de maladie jusqu'à 72h avant les symptômes visibles — permettant d'agir avant les pertes." data-ar="يحلل النظام البيانات السلوكية والصحية للكشف عن المؤشرات المبكرة للمرض قبل 72 ساعة — مما يتيح التدخل قبل وقوع الخسائر.">The system analyzes behavioral and health data to detect early signs of illness up to 72 hours before visible symptoms — enabling intervention before losses occur.</div></div></div>
+          <div class="cap"><div class="cap-n">03</div><div><div class="cap-t" data-en="Financial Monitoring Across All Branches"  data-fr="Surveillance Financière Toutes Branches"      data-ar="المراقبة المالية عبر جميع الفروع">Financial Monitoring Across All Branches</div><div class="cap-d" data-en="Every transaction across every branch is monitored in real time. Unusual patterns are flagged automatically to protect the organization's financial integrity." data-fr="Chaque transaction dans toutes les branches est surveillée en temps réel. Les schémas inhabituels sont signalés automatiquement pour protéger l'intégrité financière." data-ar="كل معاملة عبر جميع الفروع تُراقَب في الوقت الفعلي. يتم الإبلاغ تلقائيًا عن الأنماط غير المعتادة.">Every transaction across every branch is monitored in real time. Unusual patterns are flagged automatically to protect the organization's financial integrity.</div></div></div>
+          <div class="cap"><div class="cap-n">04</div><div><div class="cap-t" data-en="Smart Irrigation & Water Management"       data-fr="Irrigation Intelligente & Gestion de l'Eau"  data-ar="الري الذكي وإدارة المياه">Smart Irrigation & Water Management</div><div class="cap-d" data-en="Soil sensors combined with weather data and crop type calculate the precise daily water requirement per field. Automated irrigation control reduces consumption by up to 40%." data-fr="Capteurs sol combinés aux données météo et type de culture pour calculer les besoins en eau exacts par parcelle. Le contrôle automatisé réduit la consommation jusqu'à 40%." data-ar="تجمع أجهزة استشعار التربة مع بيانات الطقس ونوع المحصول لحساب احتياجات المياه اليومية الدقيقة لكل حقل. يقلل التحكم التلقائي من الاستهلاك بنسبة تصل إلى 40%.">Soil sensors combined with weather data and crop type calculate the precise daily water requirement per field. Automated irrigation control reduces consumption by up to 40%.</div></div></div>
+        </div>
+        <div>
+          <div class="cap"><div class="cap-n">05</div><div><div class="cap-t" data-en="National Production Forecasting"           data-fr="Prévision de Production Nationale"           data-ar="توقعات الإنتاج الوطني">National Production Forecasting</div><div class="cap-d" data-en="The platform predicts national agricultural output by crop type 3 to 6 months ahead — enabling the Ministry to plan imports and exports and prevent food shortages before they occur." data-fr="La plateforme prédit la production agricole nationale par type de culture 3 à 6 mois à l'avance — permettant au Ministère de planifier imports et exports et de prévenir les pénuries alimentaires." data-ar="تتنبأ المنصة بالإنتاج الزراعي الوطني حسب نوع المحصول قبل 3 إلى 6 أشهر — مما يمكّن الوزارة من تخطيط الواردات والصادرات ومنع نقص الغذاء.">The platform predicts national agricultural output by crop type 3 to 6 months ahead — enabling the Ministry to plan imports and exports and prevent food shortages before they occur.</div></div></div>
+          <div class="cap"><div class="cap-n">06</div><div><div class="cap-t" data-en="Product Traceability & Export Certification" data-fr="Traçabilité Produits & Certification Export" data-ar="تتبع المنتجات وشهادة التصدير">Product Traceability & Export Certification</div><div class="cap-d" data-en="Every animal receives a verified digital record from birth. This enables automatic halal certification and compliance with European and Gulf export standards — increasing export value." data-fr="Chaque animal reçoit un dossier numérique vérifié dès sa naissance. Cela permet la certification halal automatique et la conformité aux normes d'export européennes et du Golfe." data-ar="كل حيوان يتلقى سجلاً رقمياً موثقاً منذ الولادة. هذا يتيح شهادة الحلال التلقائية والامتثال لمعايير التصدير الأوروبية والخليجية.">Every animal receives a verified digital record from birth. This enables automatic halal certification and compliance with European and Gulf export standards.</div></div></div>
+          <div class="cap"><div class="cap-n">07</div><div><div class="cap-t" data-en="Direct Farm-to-Market Platform"            data-fr="Plateforme Directe Ferme-Marché"            data-ar="منصة مباشرة من المزرعة إلى السوق">Direct Farm-to-Market Platform</div><div class="cap-d" data-en="A digital marketplace connecting farms directly with restaurants, hotels, and exporters — removing intermediaries so farmers earn more and buyers access better quality." data-fr="Un marché numérique connectant les fermes directement aux restaurants, hôtels et exportateurs — supprimant les intermédiaires pour que les fermiers gagnent plus." data-ar="سوق رقمي يربط المزارع مباشرة بالمطاعم والفنادق والمصدرين — إزالة الوسطاء حتى يكسب المزارعون أكثر.">A digital marketplace connecting farms directly with restaurants, hotels, and exporters — removing intermediaries so farmers earn more and buyers access better quality.</div></div></div>
+          <div class="cap"><div class="cap-n">08</div><div><div class="cap-t" data-en="Automated Reports for Leadership"          data-fr="Rapports Automatisés pour la Direction"      data-ar="تقارير آلية للقيادة">Automated Reports for Leadership</div><div class="cap-d" data-en="Weekly and monthly performance reports generated and sent automatically — covering livestock health, financial results, and operational summaries per branch and wilaya." data-fr="Rapports de performance hebdomadaires et mensuels générés et envoyés automatiquement — couvrant santé du bétail, résultats financiers et résumés opérationnels par branche et wilaya." data-ar="تقارير الأداء الأسبوعية والشهرية يتم إنشاؤها وإرسالها تلقائيًا — تغطي صحة الماشية والنتائج المالية والملخصات التشغيلية.">Weekly and monthly performance reports generated and sent automatically — covering livestock health, financial results, and operational summaries per branch and wilaya.</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ LAB ═══════════════ -->
+<section id="lab" class="section s-dark">
+  <div class="container">
+    <div class="g2 fi-anim" style="gap:4rem;align-items:start">
+      <div>
+        <div class="slabel" data-en="Research & Development" data-fr="Recherche & Développement" data-ar="البحث والتطوير">Research & Development</div>
+        <h2 class="stitle" data-en="The Laboratory — Our Scientific Foundation" data-fr="Le Laboratoire — Notre Fondation Scientifique" data-ar="المختبر — أساسنا العلمي">The Laboratory —<br/>Our Scientific Foundation</h2>
+        <div class="divider"></div>
+        <p class="ssub" data-en="GADA's laboratory network produces scientific data specific to Algerian soil, climate, and livestock — enabling our digital platform to generate recommendations and predictions that are genuinely adapted to local conditions." data-fr="Le réseau de laboratoires de GADA produit des données scientifiques spécifiques aux sols, au climat et au bétail algériens — permettant à notre plateforme de générer des recommandations et prédictions réellement adaptées aux conditions locales." data-ar="يولّد شبكة مختبرات جادا بيانات علمية خاصة بالتربة والمناخ والماشية الجزائرية — مما يمكّن منصتنا من توليد توصيات وتوقعات مُكيَّفة حقًا مع الظروف المحلية.">GADA's laboratory network produces scientific data specific to Algerian soil, climate, and livestock — enabling our digital platform to generate recommendations and predictions that are genuinely adapted to local conditions.</p>
+        <div class="flywheel">
+          <div class="fw-title" data-en="How Our Data Creates Value" data-fr="Comment Nos Données Créent de la Valeur" data-ar="كيف تخلق بياناتنا قيمة">How Our Data Creates Value</div>
+          <div class="fw-flow">
+            <div class="fw-step" data-en="More Farms"    data-fr="Plus de Fermes"       data-ar="المزيد من المزارع">More Farms</div><div class="fw-arr">→</div>
+            <div class="fw-step" data-en="More Data"     data-fr="Plus de Données"      data-ar="المزيد من البيانات">More Data</div><div class="fw-arr">→</div>
+            <div class="fw-step" data-en="Better AI"     data-fr="Meilleure IA"         data-ar="ذكاء اصطناعي أفضل">Better AI</div><div class="fw-arr">→</div>
+            <div class="fw-step" data-en="Better Results" data-fr="Meilleurs Résultats" data-ar="نتائج أفضل">Better Results</div><div class="fw-arr">→</div>
+            <div class="fw-step" data-en="More Farms"    data-fr="Plus de Fermes"       data-ar="المزيد من المزارع">More Farms</div>
+          </div>
+        </div>
+      </div>
+      <div class="lab-cards">
+        <div class="lcard"><div class="lcard-ico">🧪</div><div class="lcard-t" data-en="Soil Analysis"          data-fr="Analyse des Sols"      data-ar="تحليل التربة">Soil Analysis</div><div class="lcard-d" data-en="pH, nitrogen, minerals, moisture retention, and microbial health. Building Algeria's most comprehensive agricultural soil database." data-fr="pH, azote, minéraux, rétention d'eau et santé microbienne. Construction de la base de données pédologiques agricoles la plus complète d'Algérie." data-ar="درجة الحموضة والنيتروجين والمعادن واحتباس الرطوبة والصحة الميكروبية. بناء أشمل قاعدة بيانات تربة زراعية في الجزائر.">pH, nitrogen, minerals, moisture retention, and microbial health. Building Algeria's most comprehensive agricultural soil database.</div></div>
+        <div class="lcard"><div class="lcard-ico">🐄</div><div class="lcard-t" data-en="Animal Nutrition"       data-fr="Nutrition Animale"    data-ar="تغذية الحيوانات">Animal Nutrition</div><div class="lcard-d" data-en="Developing optimized feed formulas per breed and region, cross-referenced with satellite health data to validate real-world impact." data-fr="Développement de formules alimentaires optimisées par race et région, croisées avec les données de santé satellite pour valider l'impact réel." data-ar="تطوير تركيبات أعلاف محسّنة لكل سلالة ومنطقة، مع مقارنتها ببيانات الصحة من الأقمار الصناعية للتحقق من التأثير الفعلي.">Developing optimized feed formulas per breed and region, cross-referenced with satellite health data to validate real-world impact.</div></div>
+        <div class="lcard"><div class="lcard-ico">🔬</div><div class="lcard-t" data-en="Veterinary Diagnostics"  data-fr="Diagnostics Vét."     data-ar="التشخيص البيطري">Veterinary Diagnostics</div><div class="lcard-d" data-en="Every disease case documented by breed, region, and season — building North Africa's most detailed veterinary reference database for early detection." data-fr="Chaque cas de maladie documenté par race, région et saison — construction de la base vétérinaire de référence la plus détaillée d'Afrique du Nord." data-ar="كل حالة مرضية موثقة حسب السلالة والمنطقة والموسم — بناء قاعدة البيانات البيطرية المرجعية الأكثر تفصيلاً في شمال إفريقيا.">Every disease case documented by breed, region, and season — building North Africa's most detailed veterinary reference database for early detection.</div></div>
+        <div class="lcard"><div class="lcard-ico">🌱</div><div class="lcard-t" data-en="Crop Research"          data-fr="Recherche Cultures"  data-ar="بحوث المحاصيل">Crop Research</div><div class="lcard-d" data-en="Variety testing, growth conditions, and pest resistance data feeding directly into crop recommendation systems for Algerian farmers." data-fr="Tests de variétés, conditions de croissance et données de résistance aux parasites alimentant directement les systèmes de recommandation de cultures." data-ar="اختبار الأصناف وظروف النمو وبيانات مقاومة الآفات تُغذّي مباشرة أنظمة توصية المحاصيل للمزارعين الجزائريين.">Variety testing, growth conditions, and pest resistance data feeding directly into crop recommendation systems for Algerian farmers.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ PARTNERS ═══════════════ -->
+<section id="partners" class="section s-white">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3rem" class="fi-anim">
+      <div class="slabel" data-en="Technology Partners" data-fr="Partenaires Technologiques" data-ar="الشركاء التقنيون">Technology Partners</div>
+      <h2 class="stitle" data-en="International Technology Partners" data-fr="Partenaires Technologiques Internationaux" data-ar="الشركاء التقنيون الدوليون">International Technology Partners</h2>
+      <div class="divider" style="margin:1rem auto 0"></div>
+    </div>
+    <div class="g3 fi-anim">
+      <div class="pcard"><div class="pcard-flag">🇦🇺</div><div class="pcard-name">CERES TAG™</div><div class="pcard-org" data-en="Australia · Livestock IoT" data-fr="Australie · IoT Bétail" data-ar="أستراليا · إنترنت الأشياء للماشية">Australia · Livestock IoT</div><div class="pcard-d" data-en="GPS satellite ear tags tracking real-time location, temperature, movement, and methane levels. No local network required — works across all Algerian terrain." data-fr="Boucles GPS satellite suivant localisation, température, mouvement et méthane en temps réel. Aucun réseau local requis — fonctionne sur tout terrain algérien." data-ar="بطاقات أذن GPS بالأقمار الصناعية تتتبع الموقع ودرجة الحرارة والحركة ومستويات الميثان في الوقت الفعلي. لا يتطلب شبكة محلية.">GPS satellite ear tags tracking real-time location, temperature, movement, and methane levels. No local network required — works across all Algerian terrain.</div><div class="pcard-s"><span class="tag tag-gold" data-en="Partnership Active" data-fr="Partenariat Actif" data-ar="شراكة نشطة">Partnership Active</span></div></div>
+      <div class="pcard"><div class="pcard-flag">🇦🇺</div><div class="pcard-name">Mapipedia™</div><div class="pcard-org" data-en="Australia · Data Visualization" data-fr="Australie · Visualisation" data-ar="أستراليا · تصور البيانات">Australia · Data Visualization</div><div class="pcard-d" data-en="Agricultural data visualization platform with automated alerts via WhatsApp, SMS & email, live heatmaps, and biosecurity tracing. Fully integrated into the GADA dashboard." data-fr="Plateforme de visualisation agricole avec alertes automatisées via WhatsApp, SMS & email, cartes thermiques et suivi biosécurité. Entièrement intégrée dans le tableau de bord GADA." data-ar="منصة تصور البيانات الزراعية مع تنبيهات تلقائية عبر واتساب وSMS والبريد الإلكتروني وخرائط حرارية مباشرة. مدمجة بالكامل في لوحة تحكم جادا.">Agricultural data visualization platform with automated alerts via WhatsApp, SMS & email, live heatmaps, and biosecurity tracing. Fully integrated into the GADA dashboard.</div><div class="pcard-s"><span class="tag tag-gold" data-en="Integration Complete" data-fr="Intégration Complète" data-ar="التكامل مكتمل">Integration Complete</span></div></div>
+      <div class="pcard"><div class="pcard-flag">🇦🇺</div><div class="pcard-name">agCommander™</div><div class="pcard-org" data-en="Australia · Herd Management" data-fr="Australie · Gestion Troupeaux" data-ar="أستراليا · إدارة القطيع">Australia · Herd Management</div><div class="pcard-d" data-en="Professional herd management software with 34 years of expertise across 17 countries. Certified compatible with CERES TAG. GADA's primary livestock data management system." data-fr="Logiciel de gestion de troupeau avec 34 ans d'expertise dans 17 pays. Certifié compatible CERES TAG. Système principal de gestion des données bétail de GADA." data-ar="برنامج إدارة قطيع احترافي بخبرة 34 عامًا في 17 دولة. معتمد ومتوافق مع CERES TAG. النظام الأساسي لإدارة بيانات الماشية في جادا.">Professional herd management software with 34 years of expertise across 17 countries. Certified compatible with CERES TAG. GADA's primary livestock data management system.</div><div class="pcard-s"><span class="tag tag-outline" data-en="Onboarding" data-fr="En Cours" data-ar="قيد التنفيذ">Onboarding</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<div class="s-dark">
+  <div class="nums fi-anim">
+    <div class="nitem"><div class="nval">58</div> <div class="nlbl" data-en="Wilayas of Operation" data-fr="Wilayas d'Opération"      data-ar="ولايات العمل">Wilayas of Operation</div></div>
+    <div class="nitem"><div class="nval">400+</div><div class="nlbl" data-en="Farms — Phase 1"      data-fr="Fermes — Phase 1"         data-ar="مزرعة — المرحلة 1">Farms — Phase 1</div></div>
+    <div class="nitem"><div class="nval">8</div>   <div class="nlbl" data-en="Core Services"        data-fr="Services Principaux"      data-ar="خدمات رئيسية">Core Services</div></div>
+    <div class="nitem"><div class="nval">3</div>   <div class="nlbl" data-en="International Partners" data-fr="Partenaires Internationaux" data-ar="شركاء دوليون">International Partners</div></div>
+  </div>
+</div>
+
+<!-- ═══════════════ VISION ═══════════════ -->
+<section id="vision" class="section s-cream">
+  <div class="container">
+    <div class="g2 fi-anim" style="gap:5rem;align-items:start">
+      <div>
+        <div class="slabel" data-en="Strategic Vision" data-fr="Vision Stratégique" data-ar="الرؤية الاستراتيجية">Strategic Vision</div>
+        <h2 class="stitle" data-en="Our Roadmap to 2030" data-fr="Notre Feuille de Route vers 2030" data-ar="خارطة طريقنا نحو 2030">Our Roadmap<br/>to 2030</h2>
+        <div class="divider"></div>
+        <p class="ssub" data-en="GADA is built in four clear phases — from a solid operational foundation across Algeria, to becoming the country's leading agricultural technology company." data-fr="GADA se construit en quatre phases claires — d'une base opérationnelle solide à l'échelle de l'Algérie, jusqu'à devenir la première société de technologie agricole du pays." data-ar="تُبنى جادا في أربع مراحل واضحة — من أساس تشغيلي متين على مستوى الجزائر، إلى أن تصبح أول شركة تكنولوجيا زراعية في البلاد.">GADA is built in four clear phases — from a solid operational foundation across Algeria, to becoming the country's leading agricultural technology company.</p>
+        <div class="vis-note">
+          <div class="vis-note-t" data-en="Our Commitment" data-fr="Notre Engagement" data-ar="التزامنا">Our Commitment</div>
+          <div class="vis-note-d" data-en="Every system we build is local, secure, and owned by Algeria. Our data stays in Algeria, our technology is maintained in Algeria, and our expertise grows within Algeria — building long-term national capability." data-fr="Chaque système que nous construisons est local, sécurisé et appartient à l'Algérie. Nos données restent en Algérie, notre technologie est maintenue en Algérie, et notre expertise grandit au sein de l'Algérie." data-ar="كل نظام نبنيه محلي وآمن ومملوك للجزائر. بياناتنا تبقى في الجزائر وتقنيتنا تُصان في الجزائر وخبرتنا تنمو داخل الجزائر — بناء قدرة وطنية طويلة الأمد.">Every system we build is local, secure, and owned by Algeria. Our data stays in Algeria, our technology is maintained in Algeria, and our expertise grows within Algeria — building long-term national capability.</div>
+        </div>
+      </div>
+      <div class="rm-line">
+        <div class="rm-item"><div class="rm-phase" data-en="Phase 1 — 2026" data-fr="Phase 1 — 2026" data-ar="المرحلة 1 — 2026">Phase 1 — 2026</div><div class="rm-title" data-en="National Platform & Operations" data-fr="Plateforme Nationale & Opérations" data-ar="المنصة الوطنية والعمليات">National Platform & Operations</div><div class="rm-text" data-en="400 farms connected across 58 wilayas. Satellite tracking live. Lab network operational. Ministry and leadership dashboards deployed." data-fr="400 fermes connectées dans 58 wilayas. Suivi satellite actif. Réseau laboratoires opérationnel. Tableaux de bord Ministère et direction déployés." data-ar="400 مزرعة متصلة عبر 58 ولاية. التتبع بالأقمار الصناعية مباشر. شبكة المختبرات تعمل. لوحات تحكم الوزارة والقيادة منشورة.">400 farms connected across 58 wilayas. Satellite tracking live. Lab network operational. Ministry and leadership dashboards deployed.</div><div class="rm-tags"><span class="rm-tag">5–10M DZD</span></div></div>
+        <div class="rm-item"><div class="rm-phase" data-en="Phase 2 — 2027" data-fr="Phase 2 — 2027" data-ar="المرحلة 2 — 2027">Phase 2 — 2027</div><div class="rm-title" data-en="Scale & Government Contracts" data-fr="Montée en Échelle & Contrats Gouvernementaux" data-ar="التوسع والعقود الحكومية">Scale & Government Contracts</div><div class="rm-text" data-en="1,000+ farms. Government service contracts. Direct farm-to-market platform launched. Water management and export certification systems live." data-fr="1 000+ fermes. Contrats gouvernementaux. Plateforme marché direct lancée. Systèmes de gestion de l'eau et de certification export actifs." data-ar="1000+ مزرعة. عقود حكومية. منصة السوق المباشرة مُطلقة. أنظمة إدارة المياه وشهادة التصدير مباشرة.">1,000+ farms. Government service contracts. Direct farm-to-market platform launched. Water management and export certification systems live.</div><div class="rm-tags"><span class="rm-tag">20–40M DZD</span></div></div>
+        <div class="rm-item"><div class="rm-phase" data-en="Phase 3 — 2028–2029" data-fr="Phase 3 — 2028–2029" data-ar="المرحلة 3 — 2028-2029">Phase 3 — 2028–2029</div><div class="rm-title" data-en="Multi-Ministry Digital Infrastructure" data-fr="Infrastructure Numérique Multi-Ministères" data-ar="البنية التحتية الرقمية متعددة الوزارات">Multi-Ministry Digital Infrastructure</div><div class="rm-text" data-en="GADA platform extended to serve multiple government ministries. National data center operational. Algeria begins exporting agricultural technology to African nations." data-fr="Plateforme GADA étendue pour servir plusieurs ministères. Data center national opérationnel. L'Algérie commence à exporter sa technologie agricole vers les nations africaines." data-ar="توسيع منصة جادا لخدمة وزارات حكومية متعددة. مركز بيانات وطني يعمل. تبدأ الجزائر في تصدير التكنولوجيا الزراعية للدول الأفريقية.">GADA platform extended to serve multiple government ministries. National data center operational. Algeria begins exporting agricultural technology to African nations.</div><div class="rm-tags"><span class="rm-tag">100M+ DZD</span></div></div>
+        <div class="rm-item"><div class="rm-phase" data-en="Phase 4 — 2030" data-fr="Phase 4 — 2030" data-ar="المرحلة 4 — 2030">Phase 4 — 2030</div><div class="rm-title" data-en="Algeria's Agricultural Technology Leader" data-fr="Leader Tech Agricole d'Algérie" data-ar="رائد التكنولوجيا الزراعية في الجزائر">Algeria's Agricultural Technology Leader</div><div class="rm-text" data-en="GADA stands as Algeria's leading national agricultural technology company — government-backed, internationally recognized, and a model for the African continent." data-fr="GADA devient la première société nationale de technologie agricole d'Algérie — soutenue par le gouvernement, reconnue internationalement, modèle pour le continent africain." data-ar="تقف جادا كأول شركة تكنولوجيا زراعية وطنية في الجزائر — مدعومة حكوميًا ومعترف بها دولياً ونموذجًا للقارة الأفريقية.">GADA stands as Algeria's leading national agricultural technology company — government-backed, internationally recognized, and a model for the African continent.</div><div class="rm-tags"><span class="rm-tag" data-en="National Infrastructure" data-fr="Infrastructure Nationale" data-ar="بنية تحتية وطنية">National Infrastructure</span><span class="rm-tag" data-en="African Export" data-fr="Export Africain" data-ar="تصدير أفريقي">African Export</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CONTACT ═══════════════ -->
+<section id="contact" class="section s-white">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3rem" class="fi-anim">
+      <div class="slabel" data-en="Get In Touch" data-fr="Nous Contacter" data-ar="تواصل معنا">Get In Touch</div>
+      <h2 class="stitle" data-en="Contact GADA" data-fr="Contacter GADA" data-ar="تواصل مع جادا">Contact GADA</h2>
+      <div class="divider" style="margin:1rem auto 0"></div>
+    </div>
+    <div class="contact-grid fi-anim">
+      <div>
+        <div class="ci"><div class="ci-ico">🏢</div><div><div class="ci-lbl" data-en="Headquarters" data-fr="Siège Social" data-ar="المقر الرئيسي">Headquarters</div><div class="ci-val" data-en="Relizane, Algeria" data-fr="Relizane, Algérie" data-ar="غليزان، الجزائر">Relizane, Algeria</div><div class="ci-sub" data-en="Operations across all 58 wilayas" data-fr="Opérations dans les 58 wilayas" data-ar="عمليات في جميع الولايات الـ 58">Operations across all 58 wilayas</div></div></div>
+        <div class="ci"><div class="ci-ico">✉️</div><div><div class="ci-lbl" data-en="Email" data-fr="Email" data-ar="البريد الإلكتروني">Email</div><div class="ci-val">contact@gada-dz.com</div><div class="ci-sub" data-en="We respond within 24 hours" data-fr="Réponse sous 24 heures" data-ar="نرد خلال 24 ساعة">We respond within 24 hours</div></div></div>
+        <div class="ci"><div class="ci-ico">🕐</div><div><div class="ci-lbl" data-en="Office Hours" data-fr="Heures de Bureau" data-ar="ساعات العمل">Office Hours</div><div class="ci-val" data-en="Sunday – Thursday, 8:30 – 16:30" data-fr="Dim – Jeu, 8h30 – 16h30" data-ar="الأحد – الخميس، 8:30 – 16:30">Sunday – Thursday, 8:30 – 16:30</div><div class="ci-sub" data-en="Appointments preferred" data-fr="Sur rendez-vous de préférence" data-ar="يُفضل بموعد مسبق">Appointments preferred</div></div></div>
+
+        <!-- ★ GPS MAP PLACEHOLDER ★ -->
+        <div class="map-box" onclick="window.open('https://www.google.com/maps/place/Relizane,+Algeria','_blank')">
+          <div class="map-box-badge">📍 GPS</div>
+          <div class="map-box-pin">🗺️</div>
+          <div class="map-box-t" data-en="Our Office — Relizane" data-fr="Notre Bureau — Relizane" data-ar="مكتبنا — غليزان">Our Office — Relizane</div>
+          <div class="map-box-s" data-en="Exact coordinates will be added upon office opening. Click to open Relizane on Google Maps." data-fr="Les coordonnées exactes seront ajoutées à l'ouverture du bureau. Cliquez pour ouvrir Relizane sur Google Maps." data-ar="ستُضاف الإحداثيات الدقيقة عند افتتاح المكتب. انقر لفتح غليزان على خرائط جوجل.">Exact coordinates will be added upon office opening. Click to open Relizane on Google Maps.</div>
+        </div>
+      </div>
+
+      <div class="cf">
+        <h3 style="font-family:var(--ff-head);font-size:1.25rem;color:var(--green);margin-bottom:1.4rem" data-en="Send Us a Message" data-fr="Envoyez-Nous un Message" data-ar="أرسل لنا رسالة">Send Us a Message</h3>
+        <div class="fg"><label class="fl" data-en="Full Name"     data-fr="Nom Complet"    data-ar="الاسم الكامل">Full Name</label><input type="text"  class="fi" placeholder="Your full name"/></div>
+        <div class="fg"><label class="fl" data-en="Email Address" data-fr="Adresse Email"  data-ar="عنوان البريد">Email Address</label><input type="email" class="fi" placeholder="your@email.com"/></div>
+        <div class="fg">
+          <label class="fl" data-en="Subject" data-fr="Sujet" data-ar="الموضوع">Subject</label>
+          <select class="fs">
+            <option data-en="Partnership Inquiry"    data-fr="Demande de Partenariat"  data-ar="استفسار شراكة">Partnership Inquiry</option>
+            <option data-en="Investment Information" data-fr="Information Investissement" data-ar="معلومات الاستثمار">Investment Information</option>
+            <option data-en="Farm Registration"      data-fr="Inscription Ferme"        data-ar="تسجيل مزرعة">Farm Registration</option>
+            <option data-en="Technical Platform"     data-fr="Plateforme Technique"     data-ar="المنصة التقنية">Technical Platform</option>
+            <option data-en="General Inquiry"        data-fr="Renseignement Général"    data-ar="استفسار عام">General Inquiry</option>
+          </select>
+        </div>
+        <div class="fg"><label class="fl" data-en="Message" data-fr="Message" data-ar="الرسالة">Message</label><textarea class="ft" placeholder="Your message..."></textarea></div>
+        <button class="btn btn-gold" style="width:100%" data-en="Send Message" data-fr="Envoyer le Message" data-ar="إرسال الرسالة">Send Message</button>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ═══════════════ FOOTER ═══════════════ -->
 <footer>
@@ -384,12 +634,38 @@
           </div>
         </div>
         <p class="fg-brand-text" data-en="Algeria's national agricultural development consortium — engineering, digital analytics, laboratory science, and satellite technology for national food security and economic growth." data-fr="Le consortium national algérien de développement agricole — ingénierie, analyses numériques, sciences de laboratoire et technologie satellite pour la sécurité alimentaire et la croissance économique nationale." data-ar="التكتل الوطني الجزائري للتطوير الزراعي — الهندسة والتحليلات الرقمية وعلوم المختبر وتقنية الأقمار الصناعية من أجل الأمن الغذائي والنمو الاقتصادي الوطني.">Algeria's national agricultural development consortium — engineering, digital analytics, laboratory science, and satellite technology for national food security and economic growth.</p>
-        <div style="display:flex;gap:.45rem"><span class="tag tag-ow" style="font-size:.62rem">🇩🇿 Algeria</span><span class="tag tag-ow" style="font-size:.62rem">GME</span></div>
+        <div style="display:flex;gap:.45rem">
+          <span class="tag tag-ow" style="font-size:.62rem">🇩🇿 Algeria</span>
+          <span class="tag tag-ow" style="font-size:.62rem">GME</span>
+        </div>
       </div>
-      <div>...</div>
-      <div>...</div>
+      <div>
+        <div class="fh" data-en="Navigation" data-fr="Navigation" data-ar="التنقل">Navigation</div>
+        <ul class="fl-list">
+          <li><a href="#about"    data-en="About GADA"  data-fr="À propos"    data-ar="حول جادا">About GADA</a></li>
+          <li><a href="#services" data-en="Services"    data-fr="Services"    data-ar="الخدمات">Services</a></li>
+          <li><a href="#platform" data-en="Platform"    data-fr="Plateforme"  data-ar="المنصة">Platform</a></li>
+          <li><a href="#lab"      data-en="Laboratory"  data-fr="Laboratoire" data-ar="المختبر">Laboratory</a></li>
+          <li><a href="#partners" data-en="Partners"    data-fr="Partenaires" data-ar="الشركاء">Partners</a></li>
+          <li><a href="#vision"   data-en="Vision 2030" data-fr="Vision 2030" data-ar="رؤية 2030">Vision 2030</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fh" data-en="Contact" data-fr="Contact" data-ar="تواصل">Contact</div>
+        <ul class="fl-list">
+          <li><a href="mailto:contact@gada-dz.com">contact@gada-dz.com</a></li>
+          <li><a href="#contact" data-en="Send a Message" data-fr="Envoyer un Message" data-ar="إرسال رسالة">Send a Message</a></li>
+          <li><span style="font-size:.78rem;color:rgba(255,255,255,.32)" data-en="Relizane, Algeria" data-fr="Relizane, Algérie" data-ar="غليزان، الجزائر">Relizane, Algeria</span></li>
+        </ul>
+      </div>
     </div>
-    <div class="f-bottom">...</div>
+    <div class="f-bottom">
+      <div class="f-copy" data-en="© 2026 GADA — Groupement Algérien de Développement Agricole. All rights reserved." data-fr="© 2026 GADA — Groupement Algérien de Développement Agricole. Tous droits réservés." data-ar="© 2026 جادا — التجمع الجزائري للتطوير الزراعي. جميع الحقوق محفوظة.">© 2026 GADA — Groupement Algérien de Développement Agricole. All rights reserved.</div>
+      <div class="f-bdgs">
+        <span class="f-bdg" data-en="Ministry Partner" data-fr="Partenaire Ministère" data-ar="شريك الوزارة">Ministry Partner</span>
+        <span class="f-bdg">GME</span>
+      </div>
+    </div>
   </div>
 </footer>
 
